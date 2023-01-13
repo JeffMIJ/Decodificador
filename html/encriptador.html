@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/encriptado-style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="contenedor-alura">
+                <img src="../image/Logo.png" alt="Logo alura">
+            </div>
+            <div class="contenedor-texto">
+                <textarea id="enciptadorText" cols="20" rows="16" placeholder="Ingrese el texto aqui" maxlength="100" 
+                ></textarea>
+                <p>Solo letras minúsculas y sin acentos</p>
+                <button type="button" id="button-encriptar" name="encriptador" onclick="validarEncriptado(event);">Encriptar</button>
+                <button type="button" id="button-desencriptar" name="desencriptador" onclick="validarEncriptado(event);">Desencriptar</button>
+            </div>
+            <div class="contenedor-encriptado">
+                <div class="contenido-encriptado-interno">
+                    <img src="../image/Muñeco.png" alt="logoMuñeco" id="logoMuñeco">
+                    <p id="sinMensaje"> Ningún mensaje fue encontrado</p>
+                    <p id="ingreseTexto">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="../js/encriptador.js"></script>
+</html>

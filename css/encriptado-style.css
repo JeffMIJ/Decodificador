@@ -1,0 +1,145 @@
+body{
+    background-color: #F3F5FC;
+    width: auto;
+    height: auto;
+}
+.contenedor-alura{
+    height: 100vh;
+    width: 10%;
+    float: left;
+}
+.contenedor-alura img{
+    margin: 20px 0 0 20px;
+}
+.contenedor-texto{
+    width: 50%;
+    height: 100vh;
+    float: left;
+}
+#enciptadorText{
+    margin: 80px 20px 0 20px;
+    width: 90%;
+    height: 70vh;
+    font-size: 30px;
+    background-color: #F3F5FC;
+    resize: none;
+    border: none;
+}
+.contenedor-texto p{
+    margin: 0 20px;
+    color: #423c3c;
+}
+.contenedor-texto p:before{
+    content: "⚠";
+}
+.contenedor-texto button{
+    margin: 10px 0 0 20px;
+    padding: 20px 0;
+    border-radius: 15px;
+    width: 40%;
+}
+.contenedor-texto #button-encriptar{
+    background-color: #08107e;
+    border-color: #08107e;
+    color: white;
+}
+#button-encriptar:hover{
+    background-color: #03062c ;
+}
+.contenedor-texto #button-desencriptar{
+    background-color: #9495a1;
+    border-color: #08107e;
+    color: #08107e;
+}
+#button-desencriptar:hover{
+    background-color: #c2c4da;
+}
+.contenedor-encriptado{
+    width: 30%;
+    height: 100vh;
+    float: right;
+}
+.contenido-encriptado-interno{
+    height: 90%;
+    border-radius: 25px;
+    margin: 30px 25px 0 0;
+    background-color: #fff;
+}
+.contenido-encriptado-interno img{
+    width: 70%;
+    margin: 200px 15% 0;
+}
+.contenido-encriptado-interno p{
+    width: 70%;
+    margin: 20px auto 0 auto;
+    text-align: center;
+}
+#sinMensaje{
+    font-weight: bold;
+    font-size: 25px;
+    overflow-wrap: break-word;
+}
+#ingreseTexto{
+    font-size: 15px;
+}
+::placeholder{
+    color: #08107e;
+}
+/*Esta parte es para el boton despues de usar el boton encriptar/desencriptar*/
+.CopiarBoton{
+    width: 80%;
+    padding:20px;
+    margin: 0 0 15px 0;
+    border-radius: 15px;
+    background-color: #fff;
+}
+.CopiarBoton:hover{
+    background-color: #dbd9d9;
+    font-size: 15px;
+}
+@media screen and (max-width: 1050px){
+    
+    .contenedor-alura{
+        width: 100%;
+        height: 10vh;
+        float: none;
+        clear: none;
+    }
+    .contenedor-texto{
+        width: 100%;
+        height: 70vh;
+        position: static;
+    }
+    #enciptadorText{
+        font-size: 20px;
+        height: 40vh;
+    }
+    .contenedor-encriptado{
+        position: static;
+        height: auto;
+        width: 100%;
+    }
+    .contenido-encriptado-interno{
+        margin: 0 0 20px 15px;
+        width: 83%;
+    }
+    .contenido-encriptado-interno img{
+        display: none;
+    }
+    #sinMensaje, #ingreseTexto{
+        margin: 0 auto 0 auto;
+        padding: 25px 0 15px 0;
+        text-align: center;
+    }
+    
+}
+
+
+@media screen and (max-width: 600px){
+    .contenedor-texto textarea{
+        margin: 5px 20px;
+    }
+    #sinMensaje, #ingreseTexto{
+        font-size: 15px;
+    }
+}
